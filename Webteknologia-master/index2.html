@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Lomake tehtävä</title>
 
 </head>
 
@@ -10,30 +10,61 @@
 
 <fieldset>
     <legend>Contact information:</legend>
-    <form action="Kenttä">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" value=""> <br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname" value=""><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value=""><br>
-    <label for="tphone">Telephone:</label>
-    <input type="text" id="tphone" name="tphone" value="">
-    </form>
+    <table>
 
-    <form>
-        <input type="checkbox" id="email" name="email" value="">
-        <label for="email"> Email</label><br>
-        <input type="checkbox" id="tphone" name="tphone" value="">
-        <label for="vehicle2"> Telephone</label><br>
-        
-      </form>
+
+        <tr>
+            <td> <label>Firstname</label></td>
+            <td><input type="text" id="Fname" name="Fname"></td>
+            <td colspan="2">Preferred contact method:</label>
+         </tr>
+        <tr>
+            <td> <label>Lastname:</label></td>
+            <td> <input type="text" id="Lname" name="Lname"></td>
+            <td><input type="checkbox" id="method1" name="method1" value="Email">
+                <labelfor="method1">Email</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" id="email" email="email"></td>
+            <td><input type="checkbox" id="email" name="method2" value="Telephone"><label for="method2">Telephone
+            </td>
+        </tr>
+        <tr>
+            <td><label>Telephone</label></td>
+            <td><input type="text" id="Telephone" email="email"></td>
+        </tr>
+    </table>
     </fieldset>
 
-<fieldset>
-    <legend>Feedback:</legend>
-    <label for="subject">Message subject::</label>
-    <input type="text" id="subject" name="subject" value=""> <br>
+    <fieldset>
+      <legend>Feedback</legend>
+      <table>
+          <tr>
+              <td><label>Message subject:</label></td>
+              <td><input type="text" id="fmessage" message="fmessage"></td>
+          </tr>
+      </table>
+      <table>
+          <tr>
+              <td> <textarea name="message" rows="15" cols="50"></textarea></td>
+          </tr>
+      </table>
+
+
+
+      <tr>
+          <td><label>Attach file a file:</label></td>
+          <td><input type="file"></td>
+      </tr>
+      </table>
+      <table>
+          <tr>
+              <td><input type="submit" value="send"></td>
+          </tr>
+      </table>
+  </fieldset>
     
     
  </fieldset>
